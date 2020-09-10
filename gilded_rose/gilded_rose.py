@@ -20,8 +20,6 @@ class GildedRose(object):
                 if item.name == "Backstage passes to a TAFKAL80ETC concert":
                     if item.sell_in < 11:
                         self.check_item_quality_below_50(item)
-                    if item.sell_in < 6:
-                        self.check_item_quality_below_50(item)
             if item.name != "Sulfuras, Hand of Ragnaros":
                 item.sell_in = item.sell_in - 1
             if item.sell_in < 0:
